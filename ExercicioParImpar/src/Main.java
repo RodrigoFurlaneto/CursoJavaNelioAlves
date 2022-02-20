@@ -16,6 +16,7 @@ public class Main {
 		else {
 			System.out.println("ODD");
 		}
+		
 		sc.close();
 	}
 

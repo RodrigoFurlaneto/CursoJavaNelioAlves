@@ -17,7 +17,7 @@ public class Main {
 		triangulo = A * C / 2;
 		circulo = 3.14159 * Math.pow(C, 2.0);
 		trapezio = (A + B) / 2 * C;
-		quadrado = B * B;
+		quadrado = B * B; 
 		retangulo = A * B;
 			
 		System.out.printf("TRIANGULO: %.3f%n", triangulo);

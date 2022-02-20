@@ -14,7 +14,7 @@ public class Main {
 		B = sc.nextDouble();
 		C = sc.nextDouble();
 			
-		triangulo = A * C /2;
+		triangulo = A * C / 2;
 		circulo = 3.14159 * Math.pow(C, 2.0);
 		trapezio = (A + B) / 2 * C;
 		quadrado = B * B;

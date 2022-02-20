@@ -16,7 +16,7 @@ public class Main {
 		else {
 			System.out.println("NOT NEGATIVE");
 		}
-		
+	
 		sc.close();
 	}
 

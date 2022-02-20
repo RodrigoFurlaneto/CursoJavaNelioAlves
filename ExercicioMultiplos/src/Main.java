@@ -23,7 +23,7 @@ public class Main {
 		else {
 			System.out.println("Nao sao multiplos");
 		}
-		
+	
 		sc.close();
 	}
 

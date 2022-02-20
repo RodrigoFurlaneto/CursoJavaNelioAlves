@@ -12,15 +12,11 @@ public class Main {
 		y = sc.nextInt();
 		
 		tempo = 0;
-		if (x == y) {
-			tempo = 24;
-		}
-		else if (x > y) {
-			tempo = 24 - x;
-			tempo += y;
+		if (x < y) {
+			tempo = y - x;
 		}
 		else {
-			tempo = y -x;
+			tempo = 24 - x + y;
 		}
 		
 		System.out.printf("O JOGO DUROU %d HORA(S)", tempo);

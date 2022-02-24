@@ -8,7 +8,7 @@ public class Main {
 		
 		int x = sc.nextInt();
 		
-		while(x != 2002) {
+		while (x != 2002) {
 			System.out.println("Senha Invalida");
 			x = sc.nextInt();
 		}

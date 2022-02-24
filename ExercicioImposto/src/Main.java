@@ -16,6 +16,7 @@ public class Main {
 		}
 		else if (x <= 3000.0) {
 			imposto = (x - 2000.0) * 0.08;
+			System.out.printf("R$ %.2f%n", imposto);
 		}
 		else if (x <= 4500.0) {
 			imposto = (x - 3000.0) * 0.18;

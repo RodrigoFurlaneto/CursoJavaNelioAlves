@@ -3,13 +3,13 @@ package entities;
 public class Account {
 	
 	private int accountNumber;
-	public String accountHolder;
+	private String accountHolder;
 	private double balance;
 	
-	public Account(int accountNumber, String accountHolder, double balance) {
+	public Account(int accountNumber, String accountHolder, double initialDeposit) {
 		this.accountNumber = accountNumber;
 		this.accountHolder = accountHolder;
-		this.balance = balance;
+		newDeposit(initialDeposit);
 	}
 	
 	public Account(int accountNumber, String accountHolder) {
@@ -25,12 +25,20 @@ public class Account {
 		return balance;
 	}
 	
+	public String getAccountHolder() {
+		return accountHolder;
+	}
+
+	public void setAccountHolder(String accountHolder) {
+		this.accountHolder = accountHolder;
+	}
+
 	public void newDeposit(double balance) {
 		this.balance += balance;
 	}
 	
 	public void newWithdraw(double balance) {
-		this.balance = this.balance - balance - 5;
+		this.balance -= balance + 5;
 	}
 	
 	public String toString() {

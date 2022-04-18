@@ -18,15 +18,7 @@ public class Program {
 		std.n2 = sc.nextDouble();
 		std.n3 = sc.nextDouble();
 		
-		System.out.println("FINAL GRADE = " + std);
-		if (std.sum() > 60) {
-			System.out.println("PASS");
-		}
-		else {
-			System.out.println("FAILED");
-			System.out.println("MISSING " + std.toStringFailed() + " POINTS");
-		}
+		System.out.println(std);
 		sc.close();
 	}
-
 }

@@ -9,17 +9,12 @@ public class Rectangle {
 		return width * height;
 	}
 	
-	public double perimeter() {
-		return 2.0 * (width + height);
+	public double Perimeter() {
+		return 2 * (width + height);
 	}
 	
 	public double diagonal() {
-		return Math.sqrt(Math.pow(width, 2.0) + Math.pow(height, 2.0));
+		return Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
 	}
 	
-	public String toString() {
-		return "AREA = " + String.format("%.2f%n", area()) 
-				+ "PERIMETER = " + String.format("%.2f%n", perimeter())
-				+ "DIAGONAL = " + String.format("%.2f%n", diagonal());
-	}
 }

@@ -24,10 +24,10 @@ public class PhysicalPerson extends Tax{
 	@Override
 	public Double taxToPay() {
 		if(getAnualIncome() < 20000) {
-			return (getAnualIncome() * 0.15) - (healthExpenditures * 0.5);
+			return getAnualIncome() * 0.15 - healthExpenditures * 0.5;
 		}
 		else {
-			return (getAnualIncome() * 0.25) - (healthExpenditures * 0.5);
+			return getAnualIncome() * 0.25 - healthExpenditures * 0.5;
 		}
 	}
 }

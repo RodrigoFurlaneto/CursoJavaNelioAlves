@@ -30,7 +30,5 @@ public abstract class Tax {
 		this.anualIncome = anualIncome;
 	}
 	
-	public Double taxToPay() {
-		return 0.0;
-	}
+	public abstract Double taxToPay();
 }
